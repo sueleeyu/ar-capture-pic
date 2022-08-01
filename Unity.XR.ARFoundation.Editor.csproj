@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8FB656E0-9A0A-C52D-FF6C-E4B315D864CB}</ProjectGuid>
+    <ProjectGuid>{C4228B78-32C8-44AE-5A9B-FA5F3BF7EB36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.XR.ARFoundation.Editor</AssemblyName>
@@ -302,11 +302,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.PackageManagerResolver">
-      <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.PackageManagerResolver.dll</HintPath>
-    </Reference>
     <Reference Include="Google.VersionHandlerImpl">
       <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.PackageManagerResolver.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver">
       <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.IOSResolver.dll</HintPath>
@@ -683,31 +683,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.XR.ARFoundation.csproj">
-      <Project>{4610B941-7FA7-1CDA-4110-C26E640D81EE}</Project>
+      <Project>{6F38DD9D-9F39-1768-F405-0CE7E1A02E55}</Project>
       <Name>Unity.XR.ARFoundation</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
-      <Project>{4B4FF523-AE40-7F10-FAA1-611716D25049}</Project>
+      <Project>{E104197E-66CC-1719-9BA4-F08576E0FFBC}</Project>
       <Name>Unity.XR.ARSubsystems</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{8120F36C-E7AC-A356-2D47-E0AC4F2557AC}</Project>
+      <Project>{C05BB39D-BEA7-AC62-77FC-4921D8B4C846}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.csproj">
-      <Project>{E49D726C-8FFE-BE69-D365-1806B4040F98}</Project>
+      <Project>{D208861D-D960-2B0B-D292-48D58A5A22C0}</Project>
       <Name>Unity.XR.Management</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Editor.csproj">
-      <Project>{31EBDB54-75E8-5115-E3A9-CB00F23B9C0B}</Project>
+      <Project>{3F688815-A3CD-9CC3-A398-2A6FD3807AEC}</Project>
       <Name>Unity.XR.Management.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{DDD69B0F-A70F-36A7-5E24-A219928A384E}</Project>
+      <Project>{FBDE89D5-4BF7-1669-FCCD-738C8BCBCD3B}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{B117C32E-8D41-E6FC-F42E-2485F971B50E}</Project>
+      <Project>{7CFA48C3-BB5C-D388-9B4C-B391659EF8B6}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8120F36C-E7AC-A356-2D47-E0AC4F2557AC}</ProjectGuid>
+    <ProjectGuid>{C05BB39D-BEA7-AC62-77FC-4921D8B4C846}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEngine.SpatialTracking</AssemblyName>
@@ -290,11 +290,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.PackageManagerResolver">
-      <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.PackageManagerResolver.dll</HintPath>
-    </Reference>
     <Reference Include="Google.VersionHandlerImpl">
       <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.PackageManagerResolver.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver">
       <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.IOSResolver.dll</HintPath>

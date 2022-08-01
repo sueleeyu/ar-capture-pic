@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{155F48EB-2072-940A-7F5F-31D4D527B361}</ProjectGuid>
+    <ProjectGuid>{DBD02BD1-16EE-454E-5954-2D6E14E69ED2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Timeline</AssemblyName>
@@ -357,11 +357,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.PackageManagerResolver">
-      <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.PackageManagerResolver.dll</HintPath>
-    </Reference>
     <Reference Include="Google.VersionHandlerImpl">
       <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.PackageManagerResolver.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver">
       <HintPath>Library\PackageCache\com.google.ar.core.arfoundation.extensions@b9496c2059\Editor\ExternalDependencyManager\Editor\Google.IOSResolver.dll</HintPath>

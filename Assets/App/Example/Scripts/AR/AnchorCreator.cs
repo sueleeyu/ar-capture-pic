@@ -89,30 +89,49 @@ namespace FrameworkDesign.Example
             var touch = Input.GetTouch(0);
             if (touch.phase != TouchPhase.Began)
                 return;
-
-            // Raycast against planes and feature points
-            const TrackableType trackableTypes =
-                TrackableType.FeaturePoint |
-                TrackableType.PlaneWithinPolygon;
-
-            // Perform the raycast
-            if (m_RaycastManager.Raycast(touch.position, s_Hits, trackableTypes))
-            {
-                // Raycast hits are sorted by distance, so the first one will be the closest hit.
-                var hit = s_Hits[0];
-
-                // Create a new anchor
-                var anchor = CreateAnchor(hit);
-                if (anchor)
+            if (Input.touchCount == 1 && touch.phase == TouchPhase.Began)
+            {//检测touch begin，在touch begin中做射线碰撞检测
+             // Raycast against planes and feature points
+             //---判断是否touch到UI组件----
+             //#if IPHONE || ANDROID
+                if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+                //#else
+                // if (EventSystem.current.IsPointerOverGameObject())
+                //#endif
+                //Debug.Log("当前触摸在UI上");
                 {
-                    // Remember the anchor so we can remove it later.
-                    m_Anchors.Add(anchor);
+                    Logger.Log($"当前触摸在UI上" + touch.phase);
+                    return;
                 }
                 else
                 {
-                    Logger.Log("Error creating anchor");
+                    //Debug.Log("当前没有触摸在UI上");
+                    Logger.Log($"当前没有触摸在UI上" + touch.phase);
+                }
+                const TrackableType trackableTypes =
+               TrackableType.FeaturePoint |
+               TrackableType.PlaneWithinPolygon;
+
+                // Perform the raycast
+                if (m_RaycastManager.Raycast(touch.position, s_Hits, trackableTypes))
+                {
+                    // Raycast hits are sorted by distance, so the first one will be the closest hit.
+                    var hit = s_Hits[0];
+
+                    // Create a new anchor
+                    var anchor = CreateAnchor(hit);
+                    if (anchor)
+                    {
+                        // Remember the anchor so we can remove it later.
+                        m_Anchors.Add(anchor);
+                    }
+                    else
+                    {
+                        Logger.Log("Error creating anchor");
+                    }
                 }
             }
+               
         }
 
         static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
